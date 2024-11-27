@@ -41,5 +41,6 @@ El juego ofrece un sistema de indicaciones por voz mediante un speaker, que guí
 
 ## 📷 **Capturas de pantalla**  
 ![image](https://github.com/user-attachments/assets/5da017eb-4bf3-4fbd-a98f-bebb362dc205)
-![image](https://github.com/user-attachments/assets/90ff9d0f-6da4-42b1-8bbd-2e4a60f45ecd)
+![image](https://github.com/user-attachments/assets/5189abd2-9674-4e5b-98e1-7d93ba60abb7)
+
 
