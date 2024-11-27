@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inka Chess Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-image">
+        <div class="container d-flex flex-column align-items-center  justify-content-center min-vh-100">
+            <div class="game-container text-center">
+                <h1 id="chess-game" class="mb-5"><i class="fa-solid fa-chess"></i>&nbsp; INKA CHESS &nbsp;<i
+                    class="fa-solid fa-chess"></i></h1>
+                <div class="d-grid gap-4 button-container">
+                    <button id="startButton" class="button btn">Iniciar Juego</button>
+                    <button id="reglasButton" class="button btn">Reglas</button>
+                    <button id="menuButton" class="button btn">Configuración de audio</button>
+                    <div>
+                        <button id="creditosButton" class="buttoncre btn">Créditos</button>
+                        <button id="exitButton" class="buttonsalir btn">Salir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal de Jugadores -->
+    <div id="playersModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="jugadores" class="mb-4">Jugadores</h2>
+            <p>¡Recuerda leer reglas para disfrutar del juego!</p>
+            <div class="mb-3">
+                <input type="text" id="blackPlayer" class="form-control mb-2" placeholder="Jugador del territorio negro">
+                <input type="text" id="whitePlayer" class="form-control mb-2" placeholder="Jugador del territorio blanco">
+            </div>
+            <div class="d-grid gap-3">
+                <button id="startGame" class="button btn">Empezar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Reglas -->
+    <div id="reglasModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="reglas" class="mb-4">Los Mandatos del Sol</h2>
+            <div class="text-start">
+                <p>⚔️El Objetivo del Juego⚔️</p>
+                <p>El objetivo es capturar el rey del oponente y asi terminar la partida.</p>
+                <p>♟️ Piezas en el tablero♟️</p>
+                <ul>
+                    <li>👑 Rey: Se mueve en cualquier dirección (horizontal, vertical y diagonal) solo 1 casilla.
+                    </li>
+                    <li>📿 Sacerdote: Se mueve en diagonal y cualquier casilla.</li>
+                    <li>🦙 LLama: Se mueve en forma de "L". La llama salta sobre otras piezas.</li>
+                    <li>🗡️ Guerreros: Se mueven hacia adelante 1 casilla, pero capturan en diagonal.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="creditosModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="creditos" class="mb-4">Creditos Especiales</h2>
+            <div class="text-start">
+                <p>Este juego fue hecho con mucho 💖 por:</p>
+                <p>&nbsp;&nbsp;🎊 Nikolle Yamelí Acuña Javier - U21216698</p>
+                <p>&nbsp;&nbsp;🎊 Jorge Luis Hinoztrosa Lurquin - U21230302</p>
+                <p>&nbsp;&nbsp;🎊 Julio Felipe Perez Yañez - U29308329</p>
+                <p>Agradecimiento especial al artista del grupo✨</p>
+                <p>&nbsp;&nbsp;🎸 Julio Perez por tocar "El Condor Pasa" </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Menú -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="configuración-de-audio" class="mb-4">Configuración de Audio</h2>
+            <div id="audioControl" class="d-grid gap-3">
+                <button id="muteButton" class="button btn">Mutear Música</button>
+                <button id="muteSButton" class="button btn">Mutear Sonido</button>
+                <input type="range" id="volumeSlider" class="form-range" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/audio.js"></script>
+    <script src="./scripts/modales.js"></script>
+</body>
+
+</html>

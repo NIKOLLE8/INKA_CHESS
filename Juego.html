@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <title>Inka Chess</title>
+  <link rel="stylesheet" href="./styles/tablero.css">
+  <link rel="stylesheet" href="./styles/final.css">
+</head>
+
+<body>
+  <div id="board-container">
+    <div class="board-wrapper">
+      <div id="coordinates-left">
+        <div>4</div>
+        <div>3</div>
+        <div>2</div>
+        <div>1</div>
+      </div>
+
+      <div id="board"></div>
+
+      <div id="coordinates-bottom">
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+      </div>
+    </div>
+
+    <div>
+      <div id="instructions">
+        <h2>¡Guía de Inti!</h2>
+        <p>Usa el formato de comando de voz para mover la pieza que quieras en tu turno:</p>
+        <h4>"[Nombre_pieza] en [posición_inicial] muévete hasta [posición_final]"</h4>
+        <h4>Guerrero en A2 muévete hasta A3</h4>
+        <p>Para conocer el nombre de la pieza que deseas mover, simplemente haz clic en ella!</p>
+        <div id="config">
+          <button id="voice-btn">Activar Comandos de Voz</button>
+          <button id="ConfiguracionButton"><i class="fa-solid fa-gear"></i></button>
+        </div>
+
+        <div id="status">¡Activa el micrófono!</div>
+
+      </div>
+
+      <div id="Turnos">
+      </div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <button id="retry-button">Reintentar</button>
+      <button id="exit-button">Salir</button>
+    </div>
+  </div>
+
+  <!-- Modal de Menú -->
+  <div id="menuModal" class="modalMenu">
+    <div class="modalMenu-content">
+      <span class="close">&times;</span>
+      <h2 id="configuración-de-audio" class="mb-4">Configuración de Audio</h2>
+      <div id="audioControl" class="d-grid gap-3">
+        <button id="muteSButton" class="buttonMenu">Mutear Sonido</button>
+        <button id="muteButton" class="buttonMenu">Mutear Música</button>
+        <input type="range" id="volumeSlider" class="form-range" min="0" max="100" value="50">
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./scripts/tablero.js"></script>
+  <script src="./scripts/modales.js"></script>
+  <script src="./scripts/audio.js"></script>
+</body>
+
+</html>

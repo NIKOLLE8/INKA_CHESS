@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "mi fuente";
+    src: url(../fondo/fgh.ttf);
+}
+
+.modalMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalMenu-content {
+    background: #111010;
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.modalMenu h2 {
+    color: gold;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: gold;
+    opacity: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.close:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: gold;
+}
+
+.buttonMenu-container {
+    max-width: 300px;
+}
+
+.buttonMenu {
+    background: #458845 !important;
+    color: white !important;
+    border: none !important;
+    padding: 1rem 2rem !important;
+    border-radius: 5px !important;
+    transition: transform 0.2s, background 0.2s !important;
+}
+
+.buttonMenu:hover {
+    background: #725f59 !important;
+}
