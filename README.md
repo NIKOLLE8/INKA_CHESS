@@ -23,7 +23,7 @@ El juego ofrece un sistema de indicaciones por voz mediante un speaker, que guí
 
 ## 🚀 **¿Cómo ingreso al juego?**  
 
-1. 🌐 **Accede al juego aquí (link temporal)**: [Inka Chess](https://bit.ly/InkaChessGame).  
+1. 🌐 **Accede al juego aquí (link temporal)**: https://inkachess.netlify.app/
 2. 🗣️ **Lee las reglas del juego en el menú**  
 3. 🎧 **Sigue el comando de voz y deja que el speaker te guíe** 
 4. 🏆 **¡Que gane el mejor estratega!**  
